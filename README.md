@@ -12,7 +12,7 @@ It is offered as proof-of-concept. Delightfully useless yet deliciously alluring
 3. Each video file is scanned for its atomic meta data
 4. The meta data is harvested and saved into a .csf file, one row per video file.
 
-
+An example of output (only a few columns shown):
 ![output](output.png)
 
 ## The Atomic Meta Data Harvested:

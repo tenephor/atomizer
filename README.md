@@ -86,7 +86,7 @@ This is an iTunes-created atom. It is a string that contains the rating. e.g., P
 ## How to Use:
 1. Download and run script under OSX
 2. From the main menu, select Add or Change Path(s): select one or more folders with video encodes
-3. Go back to the main menu and select "Dump Atoms": a .csv is written into the same folder as the script.
+3. Go back to the main menu and select "Dump Atoms". A .csv will be written into the same folder as the script. It might take a few minutes depending on how many video files are parsed.
 
 ## Taking it Further:
 Apple's script editor can package the script as an application.

@@ -1,9 +1,9 @@
 # Atomizer
 
-This is an Applescript script that parses atoms from .m4v and .mp4 encoded videos.
+This is an Applescript script that parses atoms from .m4v and .mp4 encoded video files.
 Obviously, it runs under OSX.
 
-It is offered as proof-of-concept. The basic algorithm could be re-tooled for a variety of needs.
+It is offered as proof-of-concept. Delightfully useless yet deliciously alluring. The basic algorithm could be re-tooled for a variety of needs.
 
 ## What It Does:
 
@@ -14,7 +14,7 @@ It is offered as proof-of-concept. The basic algorithm could be re-tooled for a 
 5. Meta data that is numeric-coded is converted to a text description.
 
 ## The Atomic Meta Data Harvested:
-All atoms are returned if found. If not found, then "NF" is returned.
+Atoms are returned if found. If not found, then "NF" is returned.
 
 ### The Video Type atom (stik)
 This atom is numericly coded in the video file. String description returned by the script is based on the numeric value found:
@@ -47,7 +47,7 @@ The actors in the video. These are typically placed in the *artist* atom. This a
 The 4-digit year of the video is pulled from this atom. In most cases, the year the movie was released. The date might be stored in the video file as YYYY-MM-DD, or all that with Time too.
 
 ### The Long Description Atom (ldes)
-The long description of the video. This can be a long page of text if the video's creator liked to paste summaries from Wikipedia. This atom is string coded in the video file. The string is returned but any quotes contained are re-coded (changed from " to "") for CSV. Any carriage returns in the string are replaced with "CR" for CSV compliance. Note that with an easy change to the script these could simply be removed as well.
+The long description of the video. This can be a long page of text if the video's creator liked to paste summaries from Wikipedia. This atom is string coded in the video file. The string is returned but any quotes contained are re-coded (changed from " to "") for CSV. Some software writes sloppy tags, ie carriage returns or html in the description fields. Any carriage returns in the string are replaced with "CR" for CSV compliance. Note that with an easy change to the script these could simply be removed as well.
 
 ### The Sort-Name Atom (sonm)
 The sort-name for the video. Movie library apps typically use this atom to sort the titles in a GUI. This allows sequels to be shown adjacent to prequels in lists. e.g., *Silence of the Lambs* and *Hannibal* could have SOTL1 and SOTL2 set as sort names respectively. It is also used to remove "The.." so that "The Prestige" with a sort-name of "Prestige" is shown alphabetically under P in a GUI, not under T. This atom is string coded in the video file. The string is returned as-is.
@@ -74,3 +74,7 @@ The string is returned but any quotes contained are re-coded (changed from " to 
 ### Rating Atom (iTunEXTC)
 This is an iTunes-created atom. It is a string that contains the rating. e.g., PG13. The rating substring is pulled from the atom and returned as is.
 
+## Further Reading:
+There are many more atoms we ignore. For more info, see 
+- https://www.adobe.com/devnet/video/articles/mp4_movie_atom.html
+- http://code.google.com/p/mp4v2/wiki/iTunesMetadata

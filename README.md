@@ -11,7 +11,7 @@ This script has nothing to do with the hackable text editor named Atom.
 
 1. The script allows the user to choose one or more paths (folders).
 2. The script examines those folders for all .mp4 and .m4v video files
-3. Each video file is scanned for its atomic meta data
+3. Each video file in those folders is scanned for its atomic meta data
 4. The meta data is harvested and saved into a .csv file, one row per video file.
 
 An example of .csv output (only a few columns shown):

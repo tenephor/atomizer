@@ -22,10 +22,11 @@ An example of .csv output (only a few columns shown):
 Atoms are returned if found. If not found, then "NF" is returned.
 
 #### The Video Type atom (stik)
-This atom is numericly coded in the video file. A string is returned by the script based on the numeric value found:
+This atom is integer coded in the video file. A string is returned by the script based on the numeric value found:
 - 0 or 9: Movie
 - 10: TV Show
 - 6: Music Video
+For any other (non-video) values the integer is returned as-is.
 
 #### The Name Atom (©nam)
 The name of the movie or show. This atom is string coded in the video file. The string is returned but any quotes contained are re-coded (changed from " to "") for CSV

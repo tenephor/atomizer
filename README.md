@@ -62,16 +62,16 @@ The long description of the video. This can be a long page of text if the video'
 The sort-name for the video. Movie library apps typically use this atom to sort the titles in a GUI. This allows sequels to be shown adjacent to prequels in lists. e.g., *Silence of the Lambs* and *Hannibal* could have SOTL1 and SOTL2 set as sort names respectively. It is also used to remove "The.." so that "The Prestige" with a sort-name of "Prestige" is shown alphabetically under P in a GUI, not under T. This atom is string coded in the video file. The string is returned as-is.
 
 #### The TV Show Name (tvsh)
-This atom is string coded in the video file. The string is returned but any quotes contained are re-coded (changed from " to "") for CSV.
+This atom is string coded in the video file. It often contains the same value as the Name atom. The string is returned but any quotes contained are re-coded (changed from " to "") for CSV.
 
 #### The TV Episode ID (tven)
-This atom is string coded in the video file. It is usually the name of the episode or for standalone TV shows, something like "Frosty the Snowman", but could be any string. The string is returned
+This atom is string coded in the video file. It is usually the name of the specific episode. For standalone (non-episodic) TV shows, it's often just a copy of the Name and/or TV Show Name atoms, but could be any string. The string is returned
 
 #### The TV Show Season Number (tvsn)
-This atom is integer coded in the video file. It is usually a number like 3. The number is returned.
+This atom is integer coded in the video file. It is usually a number like 3. The number is returned. A value is rather irrelevant for files of type *Movie*, but any value found is returned regardless.
 
 #### The TV Show Episode Number (tves)
-This atom is integer coded in the video file. It is usually a number like 5. The number is returned.
+This atom is integer coded in the video file. It is usually a number like 5. The number is returned. A value is rather irrelevant for files of type *Movie*, but any value found is returned regardless.
 
 #### The Artowrk Atom (Covr)
 This atom is tested for existence. If it exists, then the video file is assumed to contain "cover art". In this case "Yes" is returned. The script does not extract binary artwork from the video file.

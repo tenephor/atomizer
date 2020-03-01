@@ -1,7 +1,7 @@
 # Atomizer
 
 This is an Applescript script that parses atoms from .m4v and .mp4 encoded video files.
-Obviously, it runs under OSX.
+Obviously, it only runs under OSX.
 
 It is offered as proof-of-concept. Delightfully useless yet deliciously alluring. This basic algorithm could be extended or re-tooled for a variety of needs.
 
@@ -76,7 +76,15 @@ The string is returned but any quotes contained are re-coded (changed from " to 
 #### Rating Atom (iTunEXTC)
 This is an iTunes-created atom. It is a string that contains the rating. e.g., PG13. The rating substring is pulled from the atom and returned as is.
 
+## How to Use:
+1. Download and run script under OSX
+2. From the main menu, select Add or Change Path(s): select one or more folders with video encodes
+3. Go back to the main menu and select "Dump Atoms": a .csv is written into the same folder as the script.
+
+## Taking it Further:
+Apple's script editor can package the script as an application.
+
 ## Further Reading:
-There are many more atoms we ignore. For more info, see 
+There are many atoms the script currently ignores. For more info, see 
 - https://www.adobe.com/devnet/video/articles/mp4_movie_atom.html
 - http://code.google.com/p/mp4v2/wiki/iTunesMetadata

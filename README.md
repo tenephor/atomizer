@@ -26,6 +26,7 @@ This atom is integer coded in the video file. A string is returned by the script
 - 0 or 9: Movie
 - 10: TV Show
 - 6: Music Video
+
 For any other (non-video) values the integer is returned as-is.
 
 #### The Name Atom (©nam)

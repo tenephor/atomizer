@@ -3,7 +3,7 @@
 This is an Applescript script that parses atoms from .m4v and .mp4 encoded video files.
 Obviously, it runs under OSX.
 
-It is offered as proof-of-concept. Delightfully useless yet deliciously alluring. The basic algorithm could be re-tooled for a variety of needs.
+It is offered as proof-of-concept. Delightfully useless yet deliciously alluring. This basic algorithm could be extended or re-tooled for a variety of needs.
 
 ## What It Does:
 

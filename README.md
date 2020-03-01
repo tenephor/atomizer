@@ -15,6 +15,7 @@ This script has nothing to do with the hackable text editor named Atom.
 4. The meta data is harvested and saved into a .csv file, one row per video file.
 
 An example of .csv output (only a few columns shown):
+
 ![output](output.png)
 
 ## The Atomic Meta Data Harvested:

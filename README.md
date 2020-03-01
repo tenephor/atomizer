@@ -84,9 +84,10 @@ The string is returned but any quotes contained are re-coded (changed from " to 
 This is an iTunes-created atom. It is a string that contains the rating. e.g., PG13. The rating substring is pulled from the atom and returned as is.
 
 ## How to Use:
-1. Download and run script under OSX
-2. From the main menu, select Add or Change Path(s): select one or more folders with video encodes
+1. Download then run the script under OSX.
+2. From the main menu, select Add or Change Path(s): select one or more folders containing video encodes (.m4v and/or .mp4 files)
 3. Go back to the main menu and select "Dump Atoms". A .csv will be written into the same folder as the script. It might take a few minutes depending on how many video files are parsed.
+4. Use OSX's Script Editor to examine and/or modify the script
 
 ## Accuracy
 There are countless applications, current and obsolete, that allow writing metadata to video files. iTunes was a popular one. Subler was another. There are countless applications, current and obsolete, that *automatically* write metadata to video files. MetaX and MetaZ are two examples. The quality and accuracy of metadata read from any video file is largely dependent on the quality of the app writing it, and decisions of the person using the app. Some apps, like iTunes, would mostly use standard atoms, but also create its own atoms in its own custom-created XML space within the file. Sometimes there will be off-plane characters in an atom because an app wasn't diligent enough to filter them out before writing. Often people would misuse atoms for the wrong purpose. The bottom line here is, tagging has never been an excercise in consistency, at least not from user to user. This script reads whatever is in there, right or wrong, it does not correct or assume. Bullshit in = bullshit out.

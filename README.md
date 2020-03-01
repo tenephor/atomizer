@@ -5,6 +5,8 @@ Obviously, it only runs under OSX.
 
 It is offered as proof-of-concept. Delightfully useless yet deliciously alluring. This basic algorithm could be extended or re-tooled for a variety of needs.
 
+It should be obvious but this script has nothing to do with the hackable text editor named Atom.
+
 ## What It Does:
 
 1. The script allows the user to choose one or more paths (folders).

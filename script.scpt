@@ -29,11 +29,11 @@ end run
 ------------------------------------------
 
 on Main()
-	set Choices to {"Dump Atoms", "Change Path(s)"}
+	set Choices to {"Add or Change Path(s)", "Dump Atoms"}
 	set Choice to (choose from list Choices with title ("Atomizer v" & version) cancel button name "Quit" OK button name "Do" with prompt "Choose an action…") as string
 	if Choice is equal to "Dump Atoms" then
 		dumpAtoms()
-	else if Choice is equal to "Change Path(s)" then
+	else if Choice is equal to "Add or Change Path(s)" then
 		set myPathList to PromptForPath(myPathList)
 	end if
 	if Choice is equal to "false" then --"quit" button returns not a boolean but a string: "false"!

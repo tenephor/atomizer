@@ -73,7 +73,7 @@ This atom is integer coded in the video file. It is usually a number like 3. The
 #### The TV Show Episode Number (tves)
 This atom is integer coded in the video file. It is usually a number like 5. The number is returned. A value is rather irrelevant for files of type *Movie*, but any value found is returned regardless.
 
-#### The Artowrk Atom (Covr)
+#### The Artwork Atom (covr)
 This atom is tested for existence. If it exists, then the video file is assumed to contain "cover art". In this case "Yes" is returned. The script does not extract binary artwork from the video file.
 
 #### The Comment Atom (©cmt)

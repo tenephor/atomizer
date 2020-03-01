@@ -23,9 +23,9 @@ Atoms are returned if found. If not found, then "NF" is returned.
 
 #### The Video Type atom (stik)
 This atom is integer coded in the video file. A string is returned by the script based on the numeric value found:
-- 0 or 9: Movie
-- 10: TV Show
-- 6: Music Video
+- 0 or 9: returns "Movie"
+- 10: returns "TV Show"
+- 6: returns "Music Video"
 
 For any other (non-video) values the integer is returned as-is.
 

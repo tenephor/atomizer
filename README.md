@@ -52,7 +52,7 @@ The long description of the video. This can be a long page of text if the video'
 #### The Sort-Name Atom (sonm)
 The sort-name for the video. Movie library apps typically use this atom to sort the titles in a GUI. This allows sequels to be shown adjacent to prequels in lists. e.g., *Silence of the Lambs* and *Hannibal* could have SOTL1 and SOTL2 set as sort names respectively. It is also used to remove "The.." so that "The Prestige" with a sort-name of "Prestige" is shown alphabetically under P in a GUI, not under T. This atom is string coded in the video file. The string is returned as-is.
 
-#### The TV Show Name
+#### The TV Show Name (tvsh)
 This atom is string coded in the video file. The string is returned but any quotes contained are re-coded (changed from " to "") for CSV.
 
 #### The TV Episode ID (tven)

@@ -53,7 +53,7 @@ Only one of the two previous genre atoms is returned. If the user-defined atom i
 The actors in the video. These are typically placed in the *artist* atom. This atom is string coded in the video file. The string is returned as-is.
 
 #### The Date Atom (©day)
-The 4-digit year of the video is pulled from this atom. In most cases, the year the movie was released. The date might be stored in the video file as YYYY-MM-DD, or all that with Time too.
+The video's date of release. For example, Star Wars would be "1977". The 4-digit year of the video is pulled from this string-coded atom. The date might be stored in the video file as YYYY-MM-DD, or that with time too.
 
 #### The Long Description Atom (ldes)
 The long description of the video. This can be a long page of text if the video's creator liked to paste summaries from Wikipedia. This atom is string coded in the video file. The string is returned but any quotes contained are re-coded (changed from " to "") for CSV. Some software writes sloppy tags, ie carriage returns or html in the description fields. Any carriage returns in the string are replaced with "CR" for CSV compliance. Note that with an easy change to the script these could simply be removed as well.
@@ -87,6 +87,9 @@ This is an iTunes-created atom. It is a string that contains the rating. e.g., P
 1. Download and run script under OSX
 2. From the main menu, select Add or Change Path(s): select one or more folders with video encodes
 3. Go back to the main menu and select "Dump Atoms". A .csv will be written into the same folder as the script. It might take a few minutes depending on how many video files are parsed.
+
+## Accuracy
+There are countless applications, current and obsolete, that allow writing metadata to video files. iTunes was a popular one. Subler was another. There are countless applications, current and obsolete, that *automatically* write metadata to video files. MetaX and MetaZ are two examples. The quality and accuracy of metadata read from any video file is largely dependent on the quality of the app writing it, and decisions of the person using the app. Some apps, like iTunes, would mostly use standard atoms, but also create its own atoms in its own custom-created XML space within the file. Sometimes there will be off-plane characters in an atom because an app wasn't diligent enough to filter them out before writing. Often people would misuse atoms for the wrong purpose. The bottom line here is, tagging has never been an excercise in consistency, at least not from user to user. This script reads whatever is in there, right or wrong, it does not correct or assume. Bullshit in = bullshit out.
 
 ## Taking it Further:
 Apple's script editor can package the script as an application.

@@ -10,9 +10,9 @@ It is offered as proof-of-concept. Delightfully useless yet deliciously alluring
 1. The script allows the user to choose one or more paths (folders).
 2. The script examines those folders for all .mp4 and .m4v video files
 3. Each video file is scanned for its atomic meta data
-4. The meta data is harvested and saved into a .csf file, one row per video file.
+4. The meta data is harvested and saved into a .csv file, one row per video file.
 
-An example of output (only a few columns shown):
+An example of .csv output (only a few columns shown):
 ![output](output.png)
 
 ## The Atomic Meta Data Harvested:

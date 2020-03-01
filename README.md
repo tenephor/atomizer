@@ -13,7 +13,7 @@ It is offered as proof-of-concept. Delightfully useless yet deliciously alluring
 4. The meta data is harvested and saved into a .csf file, one row per video file.
 
 
-![output](image)
+![output](output.png)
 
 ## The Atomic Meta Data Harvested:
 Atoms are returned if found. If not found, then "NF" is returned.

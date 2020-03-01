@@ -40,9 +40,9 @@ The short (summary) description of the video. This atom is string coded in the v
 
 #### The (pre-defined) Genre atom (gnre)
 This atom is integer coded in the video file. A string is returned by the script based on the numeric value found:
-- 58: Comedy returns "Comedy"
+- 58: returns "Comedy"
 
-58 is the only pre-defined value in the list that anyone could use for a video, the other values deal with music, ie "Techno"
+58 is the only pre-defined value in the list that anyone might use for a video, the other values deal with music, ie "Techno". For all other values the integer is returned as part of the string: "ID3 Code=*n*"
 
 #### The (user-defined) Genre atom (©gen)
 The genre of the video. This atom is string coded in the video file. The string is returned as-is.

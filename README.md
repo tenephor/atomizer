@@ -5,7 +5,7 @@ Obviously, it only runs under OSX.
 
 It is offered as proof-of-concept. Delightfully useless yet deliciously alluring. This basic algorithm could be extended or re-tooled for a variety of needs.
 
-It should be obvious but this script has nothing to do with the hackable text editor named Atom.
+This script has nothing to do with the hackable text editor named Atom.
 
 ## What It Does:
 
@@ -21,7 +21,7 @@ An example of .csv output (only a few columns shown):
 Atoms are returned if found. If not found, then "NF" is returned.
 
 #### The Video Type atom (stik)
-This atom is numericly coded in the video file. String description returned by the script is based on the numeric value found:
+This atom is numericly coded in the video file. A string is returned by the script based on the numeric value found:
 - 0 or 9: Movie
 - 10: TV Show
 - 6: Music Video

@@ -11,7 +11,9 @@ It is offered as proof-of-concept. Delightfully useless yet deliciously alluring
 2. The script examines those folders for all .mp4 and .m4v video files
 3. Each video file is scanned for its atomic meta data
 4. The meta data is harvested and saved into a .csf file, one row per video file.
-5. Meta data that is numeric-coded is converted to a text description.
+
+
+![output](image)
 
 ## The Atomic Meta Data Harvested:
 Atoms are returned if found. If not found, then "NF" is returned.

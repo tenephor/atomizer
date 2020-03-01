@@ -39,9 +39,10 @@ The tool that created the file (if present). e.g., *Handbrake 0.9.5*. This atom 
 The short (summary) description of the video. This atom is string coded in the video file. The string is returned but any quotes contained are re-coded (changed from " to "") for CSV. Any carriage returns in the string are replaced with "CR" for CSV compliance. Note that with an easy change to the script these could simply be removed as well.
 
 #### The (pre-defined) Genre atom (gnre)
-This atom is integer coded in the video file. String description returned by the script is based on the numeric value found:
-- 58: Comedy
-"Comedy" is the only pre-defined in the list I can see that anyone could use for a video, the rest deal with music, ie "Techno"
+This atom is integer coded in the video file. A string is returned by the script based on the numeric value found:
+- 58: Comedy returns "Comedy"
+
+58 is the only pre-defined value in the list that anyone could use for a video, the other values deal with music, ie "Techno"
 
 #### The (user-defined) Genre atom (©gen)
 The genre of the video. This atom is string coded in the video file. The string is returned as-is.

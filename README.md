@@ -1,4 +1,4 @@
-# Atomizer
+# Atomizer ![logo](Icon-small.png)
 
 This is an Applescript script that parses atoms from .m4v and .mp4 encoded video files.
 Obviously, it only runs under OSX.

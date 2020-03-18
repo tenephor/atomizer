@@ -19,7 +19,7 @@ An example of .csv output (only a few columns shown):
 ![output](output.png)
 
 ## The Atomic Meta Data Harvested:
-Atoms are returned if found. If not found, then "NF" is returned.
+Atoms are returned if found. For any atom not found "NF" is returned in its place.
 
 #### The Video Type atom (stik)
 This atom is integer coded in the video file. A string is returned by the script based on the numeric value found:

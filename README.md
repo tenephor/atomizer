@@ -81,7 +81,7 @@ This atom holds comments, often a field offered by library GUI apps. It's conten
 The string is returned but any quotes contained are re-coded (changed from " to "") for CSV. 
 
 #### Rating Atom (iTunEXTC)
-This is an iTunes-created atom. It is a string that contains the rating. e.g., PG13. The rating substring is pulled from the atom and returned as is.
+This is an iTunes-created atom. It is a string that denotes the rating. e.g., PG13. The rating substring is pulled from the atom and returned as is.
 
 ## How to Use:
 1. Download then run the script under OSX.

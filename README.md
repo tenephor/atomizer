@@ -53,7 +53,7 @@ Only one of the two previous genre atoms is returned. If the user-defined atom i
 The actors in the video. These are typically placed in the *artist* atom. This atom is string coded in the video file. The string is returned as-is.
 
 #### The Date Atom (©day)
-The video's date of release. For example, Star Wars would be "1977". The 4-digit year of the video is pulled from this string-coded atom. The date might be stored in the video file as YYYY-MM-DD, or that with time too.
+The video's year of release, returned as string in format YYYY. For example, Star Wars would be "1977". The 4-digit year of the video is pulled from this string-coded atom. The date might be stored in the video file as YYYY-MM-DD, or that with time too.
 
 #### The Long Description Atom (ldes)
 The long description of the video. This can be a long page of text if the video's creator liked to paste summaries from Wikipedia. This atom is string coded in the video file. The string is returned but any quotes contained are re-coded (changed from " to "") for CSV. Some software writes sloppy tags, ie carriage returns or html in the description fields. Any carriage returns in the string are replaced with "CR" for CSV compliance. Note that with an easy change to the script these could simply be removed as well.

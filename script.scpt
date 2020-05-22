@@ -3,7 +3,6 @@
 --ATOMIZER GPL v3 DJL 2020
 
 property version : "4.3"
---The following line is the only line need be changed when adding new users.
 property cr : ASCII character 13
 global myPathList
 
